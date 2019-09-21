@@ -210,8 +210,7 @@
 }
 #footer2>#download_app>img{
     width: 90%;
-    height: 25px;
-/*    height: auto;*/
+    height: auto;
     margin-left: 5%;
 }
 
