@@ -291,6 +291,16 @@
     #footer2>#contact>ul>li>span>img{
         height: 11px;
     }
+    
+    #footer2>#follow_us{
+        height: 90px;
+    }
+    #footer2>#contact{
+        height: 90px;
+    }
+    #footer2>#download_app{
+        height: 90px;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -319,6 +329,16 @@
     }
     #footer2>#contact>ul>li>span>img{
         height: 13px;
+    }
+    
+    #footer2>#follow_us{
+        height: 100px;
+    }
+    #footer2>#contact{
+        height: 100px;
+    }
+    #footer2>#download_app{
+        height: 100px;
     }
   
 }
