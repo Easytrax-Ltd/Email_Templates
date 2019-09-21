@@ -246,5 +246,5 @@ body{
     justify-content: center;
 }
 #footer2>#follow_us>ul>li>a>img{
-    width: 94%;
+    max-width: 94%;
 }
