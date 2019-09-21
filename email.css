@@ -248,7 +248,8 @@
     justify-content: space-between;
 }
 #footer2>#follow_us>ul>li>a>img{
-    max-width: 94%;
+    width: 20px;
+    height: 20px;
 /*    height: auto;*/
 }
 
