@@ -241,10 +241,6 @@ body{
     margin: 0;
     padding: 0;
 }
-#footer2>#follow_us>ul>li>a{
-    display: flex;
-    justify-content: center;
-}
 #footer2>#follow_us>ul>li>a>img{
     max-width: 94%;
     height: auto;
