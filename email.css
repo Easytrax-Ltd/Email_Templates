@@ -30,30 +30,55 @@
     background-position: right bottom;
 }
 
-#conteiner>#para_1{
+/*welcome mail page*/
+#para_1{
     border-left: 3px solid #0772B2;
     padding-left: 7px;
+    margin: 0;
 }
-#conteiner>#para_1>span{
+#para_1>span{
     color: #0772b2;
     font-weight: bold;
 }
-
-#conteiner>#welcome_img_conteiner{
+#welcome_img_conteiner{
     text-align: center;
 }
-#conteiner>#welcome_img_conteiner>#welcom_img{
+#welcome_img_conteiner>#welcom_img{
     width: 60%;
 }
-#conteiner>#para_2{
+#para_2{
     font-size: 12px;
 }
-#conteiner>#para_3{
+#para_3{
     font-size: 12px;
 }
-#conteiner>#para_3>span{
+#para_3>span{
     font-weight: bold;
 }
+/*end welcom mail*/
+
+/*invoice_mail*/
+#accounts{
+    width: 100%;
+    text-align: right;
+    font-size: 13px;
+    color: #0772B2;
+    display: block;
+    font-weight: bold;
+}
+#para_4{
+    margin-top:30px;
+    font-size: 12px;
+}
+#para_4>#name{
+    color: #0772b2;
+    font-weight: bold;
+}
+#para_5 , #para_6 , #para_7{
+    font-size: 12px;
+}
+
+/*end invoice mail*/
 #div_2{
     display:flex;
     justify-content:space-between;
@@ -68,14 +93,19 @@
     background: url(images/Rectangle%201.png);
     border-radius: 11px;
     color: white;
-    padding: 5px 20px;
 }
-#div_2>#web_link>div>img{
+#div_2>#web_link>div>a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    display: inline-block;
+}
+#div_2>#web_link>div>a>img{
     height: 22px;
     float: left;
     display: inline-block;
 }
-#div_2>#web_link>div>p{
+#div_2>#web_link>div>a>p{
     display: inline-block;
     margin:0;
     padding: 5px 0 0 5px;
@@ -116,6 +146,11 @@
 }
 #support>div img{
     width: 40%;
+    display: inline-block;
+}
+#support>div>#chat>a, #telegram>a, #whatsapp>a, #hotline>a{
+    text-decoration: none;
+    color:black;
     display: inline-block;
 }
 #support>div>#chat{
@@ -208,7 +243,7 @@
     font-size: 7px;
     padding-bottom: 10px;
 }
-#footer2>#download_app>img{
+#footer2>#download_app>a>img{
     width: 90%;
     height: auto;
     margin-left: 5%;
@@ -254,9 +289,15 @@
 
 /* Small devices (landscape phones, 544px and up) */
 @media (min-width: 544px) {  
+
+	#header>img{
+	    width: 20%;
+	    margin: 3%;
+	}
+/*    welcome mail*/
     #conteiner>#para_1{
         border-left: 3px solid #0772B2;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         padding-left: 7px;
     }
     #conteiner>#para_2{
@@ -265,13 +306,29 @@
     #conteiner>#para_3{
         font-size: 16px;
     }
+/*    invoice mail*/
+    #conteiner>#para_4{
+        margin-top:50px;
+        font-size: 16px;
+    }
+    #conteiner>#accounts , #para_5 , #para_6 , #para_7{
+        font-size: 16px;
+    }
+    
+    
     #div_2{
         font-size: 16px;
     }
     #div_2>#rating>div{
       font-size: 20px;
     }
-    
+    #div_2>#web_link>div>a>img{
+        height: 25px;
+    }
+    #div_2>#web_link>div>a>p{
+        height: 25px;
+        font-size: 14px;
+    }
     #support{
         font-size: 16px;
     }
@@ -301,9 +358,6 @@
     #footer1>a>img{
         height: auto;
     }
-    #footer2>#download_app>img{
-        height: auto;
-    }
     #footer2>#follow_us>ul>li>a>img{
         width: 80%;
         height: auto;
@@ -318,11 +372,11 @@
         justify-content: center;
     }
     #support>div img{
-        width: 20%;
+        width: 27%;
         display: inline-block;
     }
     #support>div p{
-        width: 75%;
+        width: 68%;
         display: inline-block;
         text-align: left;
         vertical-align: bottom;
@@ -357,4 +411,25 @@
         height: auto;
     }
   
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  #support>div img{
+        width: 23%;
+    }
+    #support>div p{
+        width: 72%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+     #support>div img{
+        width: 20%;
+    }
+    #support>div p{
+        width: 75%;
+    }
 }
