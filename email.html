@@ -6,22 +6,508 @@
 		<title>email</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="" >
-		<link rel="StyleSheet" href="email.css" />
+<!--		<link rel="StyleSheet" href="email.css" />-->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!-- Add your custom HEAD content here -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		
+		
+<!--		style-->
+<style type="text/css">
+/*Extra small devices (portrait phones, less than 544px) */
+
+#body{
+    font-family: 'Open Sans', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    background: #ebebeb;
+/*    background: blue;*/
+}
+
+#header{
+    width: 100%;
+    text-align: center;
+    background: url("https://gallery.mailchimp.com/3cdfcc85a72d4c705ba8a260c/images/a93ac88d-554c-4f57-a7da-5e6dfbb4aadc.png");
+}
+
+#header>img{
+    width: 25%;
+    margin: 3%;
+}
+
+#conteiner{
+    margin: 1%;
+    padding: 5%;
+    width: 98%;
+    background: #ffffff;
+    background-image: url("https://gallery.mailchimp.com/3cdfcc85a72d4c705ba8a260c/images/0eca8e49-cd99-445c-94d2-d06b15a2ae53.png");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+/*welcome mail page*/
+#para_1{
+    border-left: 3px solid #0772B2;
+    padding-left: 7px;
+    margin: 0;
+}
+#para_1>span{
+    color: #0772b2;
+    font-weight: bold;
+}
+#welcome_img_conteiner{
+    text-align: center;
+}
+#welcome_img_conteiner>#welcom_img{
+    width: 60%;
+}
+#para_2{
+    font-size: 12px;
+}
+#para_3{
+    font-size: 12px;
+}
+#para_3>span{
+    font-weight: bold;
+}
+/*end welcom mail*/
+#div_2{
+    display:flex;
+    justify-content:space-between;
+    font-size: 11px;
+}
+#div_2>#web_link{
+    display: inline-block;
+    vertical-align: top;
+}
+#div_2>#web_link>div{
+    display: inline-block;
+    background: url(https://gallery.mailchimp.com/3cdfcc85a72d4c705ba8a260c/images/363bd123-d7b5-44e8-81d6-d256a68699c7.png);
+    border-radius: 7px;
+    color: white;
+}
+#div_2>#web_link>div>a{
+    text-decoration: none;
+    color: white;
+    padding: 7px 22px;
+    display: inline-block;
+}
+#div_2>#web_link>div>a>img{
+    height: 22px;
+    float: left;
+    display: inline-block;
+}
+#div_2>#web_link>div>a>p{
+    display: inline-block;
+    margin:0;
+    padding: 5px 0 0 5px;
+    height: 22px;
+    font-size: 10px;
+}
+
+#div_2>#rating{
+    display: inline-block;
+    text-align: center;
+    
+}
+/*
+#div_2>#rating>p{
+    font-size: 10px;
+}
+*/
+#div_2>#rating>a{
+    color: #707070;
+}
+#div_2>#rating>a>div{
+    display: inline-block;
+    font-size: 15px;
+}
+
+#div_2>#rating>a>div>.checked{
+    color: orangered;
+}
+
+#support{
+    margin-top:10px;
+    font-size: 9px;
+    text-align: center;
+}
+#support>p{
+    font-weight: bold;
+    color:#9E9E9E;
+}
+
+#support>div p{
+    margin: 0;
+}
+#support>div img{
+    width: 40%;
+    display: inline-block;
+}
+#support>div>#chat>a, #telegram>a, #whatsapp>a, #hotline>a{
+    text-decoration: none;
+    color:black;
+    display: inline-block;
+}
+#support>div>#chat{
+    display: inline-block;
+    width: 23%;
+    margin: .5%;
+    padding: 10px 5px;
+    border: 1px solid #E5E5E5;
+}
+#support>div>#telegram{
+    display: inline-block;
+    width: 23%;
+    padding: 10px 5px;
+    margin: .5%;
+    border: 1px solid #E5E5E5;
+    
+}
+#support>div>#whatsapp{
+    display: inline-block;
+    width: 23%;
+    padding: 10px 5px;
+    margin: .5%;
+    border: 1px solid #E5E5E5;
+}
+#support>div>#hotline{
+    display: inline-block;
+    width: 23%;
+    padding: 10px 5px;
+    margin: .5%;
+    border: 1px solid #E5E5E5;
+}
+
+
+#footer1{
+    margin: 1%;
+}
+#footer1>a{
+    display: flex;
+    justify-content: center;
+    
+}
+#footer1>a>img{
+    background: #ffffff;
+    width: 100%;
+    height: 25px;
+/*    height: auto;*/
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#footer2{
+    margin: 1%;
+    padding: 3%;
+    background: #ffffff;
+    font-size: 9px;
+    color: #9E9E9E;
+}
+#footer2>#contact{
+    width:36%;
+    height: 70px;
+    border-right: 1px solid #9E9E9E;
+    display: inline-block;
+    vertical-align:top;
+}
+#footer2>#contact>p{
+    font-weight:bold;
+    margin: 0;
+    padding-bottom:5px;
+}
+#footer2>#contact>ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 8px;
+    color: #555;
+}
+#footer2>#contact>ul>li{
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+#footer2>#contact>ul>li>span{
+    align-items: center;
+}
+#footer2>#contact>ul>li>span>img{
+    margin-right: 3px;
+    height: 7px;
+    display: inline-block;
+    margin-right: 3px;
+}
+
+#footer2>#contact>ul>li>a>img{
+    margin-right: 3px;
+    height: 9px;
+    display: inline-block;
+    margin-right: 3px;
+}
+#footer2>#contact>ul>li>a{
+    text-decoration: none;
+    color: #555;
+}
+
+#footer2>#download_app{
+    width:25%;
+    display: inline-block;
+    height: 70px;
+    vertical-align:top;
+}
+#footer2>#download_app>p{
+    font-weight:bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 5%;
+    width: 90%;
+    font-size: 7px;
+    padding-bottom: 10px;
+}
+#footer2>#download_app>a>img{
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+}
+
+#footer2>#follow_us{
+    height: 70px;
+    display: inline-block;
+    width:36%;
+    border-left: 1px solid #9E9E9E;
+    vertical-align:top;
+}
+#footer2>#follow_us>p{
+    font-weight:bold;
+    margin-left: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+#footer2>#follow_us>ul{
+    list-style-type: none;
+    margin-left: 10%;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+#footer2>#follow_us>ul>li{
+    width: 25%;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+#footer2>#follow_us>ul>li>a{
+    display: flex;
+    justify-content: space-between;
+}
+#footer2>#follow_us>ul>li>a>img{
+    width: 25px;
+    height: 25px;
+/*    height: auto;*/
+}
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {  
+
+	#header>img{
+	    width: 20%;
+	    margin: 3%;
+	}
+/*    welcome mail*/
+    #conteiner>#para_1{
+        border-left: 3px solid #0772B2;
+        font-size: 1.3rem;
+        padding-left: 7px;
+    }
+    #conteiner>#para_2{
+        font-size: 16px;
+    }
+    #conteiner>#para_3{
+        font-size: 16px;
+    }
+    
+    
+    #div_2{
+        font-size: 16px;
+    }
+    #div_2>#rating>div{
+      font-size: 20px;
+    }
+    #div_2>#web_link>div>a{
+        padding: 9px 27px;
+    }
+    #div_2>#web_link>div>a>img{
+        height: 25px;
+    }
+    #div_2>#web_link>div>a>p{
+        height: 25px;
+        font-size: 14px;
+    }
+    #support{
+        margin-top:20px;
+        font-size: 14px;
+    }
+    #footer2{
+        font-size: 14px;
+    }
+    #footer2>#contact>ul{
+        font-size: 11px;
+    }
+    #footer2>#contact>ul>li>span>img{
+        height: 11px;
+        margin-right: 10px;
+    }
+    #footer2>#contact>ul>li>a>img{
+        margin-right: 10px;
+        height: 13px;
+    }
+    
+    #footer2>#follow_us{
+        height: 90px;
+    }
+    #footer2>#contact{
+        height: 90px;
+    }
+    #footer2>#download_app{
+        height: 90px;
+    }
+    #footer2>#download_app>p{
+        font-size: 11px;
+    }
+    
+    #footer1>a>img{
+        height: auto;
+    }
+    #footer2>#follow_us>ul>li>a>img{
+        width: 80%;
+        height: auto;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+    
+    #support{
+        margin-top:30px;
+    }
+    #support>div{
+        display: flex;
+        justify-content: center;
+    }
+    #support>div>#chat{
+        display: inline-block;
+        width: 20%;
+        margin: 1.5%;
+        padding: 20px 0;
+        border: 1px solid #E5E5E5;
+    }
+    #support>div>#telegram{
+        display: inline-block;
+        width: 20%;
+        padding: 20px 0;
+        margin: 1.5%;
+        border: 1px solid #E5E5E5;
+
+    }
+    #support>div>#whatsapp{
+        display: inline-block;
+        width: 20%;
+        padding: 20px 0;
+        margin: 1.5%;
+        border: 1px solid #E5E5E5;
+    }
+    #support>div>#hotline{
+        display: inline-block;
+        width: 20%;
+        padding: 20px 0px;
+        margin: 1.5%;
+        border: 1px solid #E5E5E5;
+    }
+    #support>div img{
+        width: 27%;
+        display: inline-block;
+    }
+    #support>div p{
+        width: 68%;
+        display: inline-block;
+        text-align: left;
+        vertical-align: bottom;
+        padding-left:2%;
+    }
+    
+    #footer2{
+        font-size: 16px;
+    }
+    #footer2>#contact>ul{
+        font-size: 14px;
+    }
+    #footer2>#contact>ul>li>span>img{
+        height: 13px;
+    }
+    
+    #footer2>#follow_us{
+        height: 100px;
+    }
+    #footer2>#contact{
+        height: 100px;
+    }
+    #footer2>#download_app{
+        height: 100px;
+    }
+    #footer2>#download_app>p{
+        font-size: 16px;
+    }
+    
+    #footer2>#follow_us>ul>li>a>img{
+        width: 50%;
+        height: auto;
+    }
+  
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    #support{
+        margin-top:50px;
+    }
+    #support>div img{
+        width: 30%;
+    }
+    #support>div p{
+        width: 65%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+/*
+@media (min-width: 1200px) {  
+     #support>div img{
+        width: 20%;
+    }
+    #support>div p{
+        width: 75%;
+    }
+}*/
+
+        </style>
 
 	</head>
 	<body id="body">
         <div id="header">
-         <img id="header_icon" src="images/icon.png" alt="easytrax">
+         <img id="header_icon" src="https://gallery.mailchimp.com/3cdfcc85a72d4c705ba8a260c/images/a640b84d-46d7-43ff-bc82-a50dbe758633.png" alt="easytrax">
         </div>
 <!--        conteiner-->
 		<div id="conteiner">
 		   <p id="para_1"> Welcome <span>Md. Ashiqul Amin</span> to Easytrax Vehicle Tracking Service</p>
 		   
-		   <div id="welcome_img_conteiner"><img id="welcom_img" src="images/welcom.png" alt=""></div>
+		   <div id="welcome_img_conteiner"><img id="welcom_img" src="https://gallery.mailchimp.com/3cdfcc85a72d4c705ba8a260c/images/07d72f79-1e44-4a8c-812d-2d6155e68dd7.png" alt=""></div>
 		   <br>
 		   <p id="para_2">Dear Ashiqul Amin, Thank you for choosing Easytrax Vehicle Tracking Service. You are just a few clicks away to track your vehicle from the #1 Vehicle Tracking Service Provider in Bangladesh.
            <br>
@@ -40,7 +526,7 @@
                    <p>Want to know more go to</p>
                    <div>
                       <a href="http://www.easytrax.com.bd">
-                          <img src="images/touch.png" alt="">
+                          <img src="https://gallery.mailchimp.com/3cdfcc85a72d4c705ba8a260c/images/10613b8b-72fa-43a3-a547-145e3840b7db.png" alt="">
                           <p>Easytrax.com.bd</p>
                       </a>
                    </div>
@@ -65,25 +551,25 @@
                <div>
                   <div id="chat">
                        <a href="https://tawk.to/chat/58307fdbfccdfa3ec838b0e2/default">
-                           <img src="images/live_chat_bot.png" alt="">
+                           <img src="https://gallery.mailchimp.com/3cdfcc85a72d4c705ba8a260c/images/9fd987fc-6e8f-4897-9144-6964023c4bfc.png" alt="">
                            <p>Live Chat Bot <br> 9am-11pm</p>
                        </a>
                    </div>
                    <div id="telegram">
                       <a href="https://t.me/joinchat/AYNtSg82zgf9r_LoXhpR1g">
-                          <img src="images/telegram.png" alt="">
+                          <img src="https://gallery.mailchimp.com/3cdfcc85a72d4c705ba8a260c/images/443f20ca-c750-421d-bdfc-832b13d34006.png" alt="">
                           <p>Telegram <br> 9am-11pm</p>
                       </a>
                    </div>
                    <div id="whatsapp">
                        <a href="https://wa.me/8801709888903?text=Hello,%20I%20am%20interested%20in%20your%20products,%20please%20share%20features%20and%20pricing">
-                           <img src="images/whatsapps.png" alt="">
+                           <img src="https://gallery.mailchimp.com/3cdfcc85a72d4c705ba8a260c/images/443f20ca-c750-421d-bdfc-832b13d34006.png" alt="">
                            <p>Whatsapp <br> 9am-11pm</p>
                        </a>
                    </div>
                    <div id="hotline">
                        <a href="tel: 09606667788">
-                           <img src="images/hotline.png" alt="">
+                           <img src="https://gallery.mailchimp.com/3cdfcc85a72d4c705ba8a260c/images/ecb5e2e5-7255-43fa-b6cb-cff23aae199b.png" alt="">
                            <p>Hotline <br> 9am-11pm</p>
                        </a>
                    </div>
@@ -92,31 +578,31 @@
 		</div>
 <!--		footer pay with-->
 		<div id="footer1">
-		    <a href="https://crm.easytrax.com.bd/payment"><img src="images/SSL-Commerz-Pay-With-logo-All-Size-2-03-1.png" alt=""></a>
+		    <a href="https://crm.easytrax.com.bd/payment"><img src="https://gallery.mailchimp.com/3cdfcc85a72d4c705ba8a260c/images/8d6172db-8e5e-41ee-9d29-305ab76123a2.png" alt=""></a>
 		</div>
 <!--		footer-->
 		<div id="footer2">
 		    <div id="contact">
 		        <p>Get In Touch</p>
 		        <ul>
-                  <li><a href="tel:+8809606667788"><img src="images/phone.png"  alt="">+8809606667788</a></li>
-                  <li><a href="mailto:support@easytrax.com.bd"><img src="images/massage.png" alt="">support@easytrax.com.bd</a></li>
-                  <li><a href="http://www.easytrax.com.bd"><img src="images/global.png" alt="">http://www.easytrax.com.bd</a></li>
+                  <li><a href="tel:+8809606667788"><img src="https://gallery.mailchimp.com/3cdfcc85a72d4c705ba8a260c/images/cb22a557-f28e-4e6f-b2cb-46f5d4517df9.png"  alt="">+8809606667788</a></li>
+                  <li><a href="mailto:support@easytrax.com.bd"><img src="https://gallery.mailchimp.com/3cdfcc85a72d4c705ba8a260c/images/cb4f688b-836c-4c76-8ec5-aad144ef58de.png" alt="">support@easytrax.com.bd</a></li>
+                  <li><a href="http://www.easytrax.com.bd"><img src="https://gallery.mailchimp.com/3cdfcc85a72d4c705ba8a260c/images/1f3650b0-cc31-427a-8ee0-6e0a5d099dbe.png" alt="">http://www.easytrax.com.bd</a></li>
                 </ul>
 		    </div>
 		    <div id="download_app">
 		        <p>Download App From</p>
 		        <a href="http://telematics.easytrax.com.bd">
-		            <img src="images/googleplay&appstore.png" alt="Google Play">
+		            <img src="https://gallery.mailchimp.com/3cdfcc85a72d4c705ba8a260c/images/bace0b59-4803-472f-b4c2-459704911b9d.png" alt="Google Play">
 		        </a>
 		    </div>
 		    <div id="follow_us">
 		        <p>Follow Us</p>
 		        <ul>
-                    <li><a href="https://www.facebook.com/easytrax"><img src="images/facebook.png" alt=""></a></li>
-                    <li><a href="https://www.linkedin.com/company/13473699"><img src="images/linkedin.png" alt=""></a></li>
-                    <li><a href="https://www.youtube.com/channel/UC1aSv0jmwbYyzv2rYFTnVDw"><img src="images/youtube.png" alt=""></a></li>
-                    <li><a href="https://www.instagram.com/easytrax/"><img src="images/instagram.png" alt=""></a></li>
+                    <li><a href="https://www.facebook.com/easytrax"><img src="https://gallery.mailchimp.com/3cdfcc85a72d4c705ba8a260c/images/67e03d96-5cef-4c5b-8c9d-7c093eb8bd1d.png" alt=""></a></li>
+                    <li><a href="https://www.linkedin.com/company/13473699"><img src="https://gallery.mailchimp.com/3cdfcc85a72d4c705ba8a260c/images/aab9af21-efe1-45ab-8df4-6bc211911f2a.png" alt=""></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC1aSv0jmwbYyzv2rYFTnVDw"><img src="https://gallery.mailchimp.com/3cdfcc85a72d4c705ba8a260c/images/f5ccc47d-7b74-4969-82c7-a169b1358fed.png" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/easytrax/"><img src="https://gallery.mailchimp.com/3cdfcc85a72d4c705ba8a260c/images/ad41252a-e70e-4ed4-9db5-dc9e305b9d2c.png" alt=""></a></li>
                 </ul>
 		    </div>
 		</div>

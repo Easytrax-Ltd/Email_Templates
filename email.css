@@ -11,7 +11,7 @@
 #header{
     width: 100%;
     text-align: center;
-    background: url(images/header.png);
+    background: url("https://gallery.mailchimp.com/3cdfcc85a72d4c705ba8a260c/images/a93ac88d-554c-4f57-a7da-5e6dfbb4aadc.png");
 }
 
 #header>img{
@@ -24,7 +24,7 @@
     padding: 5%;
     width: 98%;
     background: #ffffff;
-    background-image: url("images/background_icon.png");
+    background-image: url("https://gallery.mailchimp.com/3cdfcc85a72d4c705ba8a260c/images/0eca8e49-cd99-445c-94d2-d06b15a2ae53.png");
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: right bottom;
@@ -90,7 +90,7 @@
 }
 #div_2>#web_link>div{
     display: inline-block;
-    background: url(images/Rectangle%201.png);
+    background: url(https://gallery.mailchimp.com/3cdfcc85a72d4c705ba8a260c/images/363bd123-d7b5-44e8-81d6-d256a68699c7.png);
     border-radius: 7px;
     color: white;
 }
