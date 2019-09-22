@@ -91,13 +91,13 @@
 #div_2>#web_link>div{
     display: inline-block;
     background: url(images/Rectangle%201.png);
-    border-radius: 11px;
+    border-radius: 7px;
     color: white;
 }
 #div_2>#web_link>div>a{
     text-decoration: none;
     color: white;
-    padding: 5px 20px;
+    padding: 7px 22px;
     display: inline-block;
 }
 #div_2>#web_link>div>a>img{
@@ -133,6 +133,7 @@
 }
 
 #support{
+    margin-top:10px;
     font-size: 11px;
     text-align: center;
 }
@@ -155,19 +156,32 @@
 }
 #support>div>#chat{
     display: inline-block;
-    width: 24%;
+    width: 23%;
+    margin: .5%;
+    padding: 10px 5px;
+    border: 1px solid #E5E5E5;
 }
 #support>div>#telegram{
     display: inline-block;
-    width: 24%;
+    width: 23%;
+    padding: 10px 5px;
+    margin: .5%;
+    border: 1px solid #E5E5E5;
+    
 }
 #support>div>#whatsapp{
     display: inline-block;
-    width: 24%;
+    width: 23%;
+    padding: 10px 5px;
+    margin: .5%;
+    border: 1px solid #E5E5E5;
 }
 #support>div>#hotline{
     display: inline-block;
-    width: 24%;
+    width: 23%;
+    padding: 10px 5px;
+    margin: .5%;
+    border: 1px solid #E5E5E5;
 }
 
 
@@ -226,6 +240,7 @@
     margin-right: 3px;
     height: 7px;
     display: inline-block;
+    margin-right: 3px;
 }
 
 #footer2>#download_app{
@@ -322,6 +337,9 @@
     #div_2>#rating>div{
       font-size: 20px;
     }
+    #div_2>#web_link>div>a{
+        padding: 9px 27px;
+    }
     #div_2>#web_link>div>a>img{
         height: 25px;
     }
@@ -330,7 +348,8 @@
         font-size: 14px;
     }
     #support{
-        font-size: 16px;
+        margin-top:20px;
+        font-size: 14px;
     }
     #footer2{
         font-size: 14px;
@@ -340,6 +359,7 @@
     }
     #footer2>#contact>ul>li>span>img{
         height: 11px;
+        margin-right: 10px;
     }
     
     #footer2>#follow_us{
@@ -367,9 +387,42 @@
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
+    
+    #support{
+        margin-top:30px;
+    }
     #support>div{
         display: flex;
         justify-content: center;
+    }
+    #support>div>#chat{
+        display: inline-block;
+        width: 20%;
+        margin: 1.5%;
+        padding: 20px 0;
+        border: 1px solid #E5E5E5;
+    }
+    #support>div>#telegram{
+        display: inline-block;
+        width: 20%;
+        padding: 20px 0;
+        margin: 1.5%;
+        border: 1px solid #E5E5E5;
+
+    }
+    #support>div>#whatsapp{
+        display: inline-block;
+        width: 20%;
+        padding: 20px 0;
+        margin: 1.5%;
+        border: 1px solid #E5E5E5;
+    }
+    #support>div>#hotline{
+        display: inline-block;
+        width: 20%;
+        padding: 20px 0px;
+        margin: 1.5%;
+        border: 1px solid #E5E5E5;
     }
     #support>div img{
         width: 27%;
@@ -407,7 +460,7 @@
     }
     
     #footer2>#follow_us>ul>li>a>img{
-        width: 60%;
+        width: 50%;
         height: auto;
     }
   
@@ -416,15 +469,19 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-  #support>div img{
-        width: 23%;
+    #support{
+        margin-top:50px;
+    }
+    #support>div img{
+        width: 30%;
     }
     #support>div p{
-        width: 72%;
+        width: 65%;
     }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
+/*
 @media (min-width: 1200px) {  
      #support>div img{
         width: 20%;
@@ -432,4 +489,4 @@
     #support>div p{
         width: 75%;
     }
-}
+}*/
